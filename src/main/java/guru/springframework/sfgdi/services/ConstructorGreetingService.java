@@ -5,9 +5,9 @@ import org.springframework.stereotype.Service;
 // @Service annotation tells Spring that this is a Spring managed component
 // and so it should be brought into the Spring context
 @Service
-public class GreetingServiceImpl implements GreetingService {
+public class ConstructorGreetingService implements GreetingService {
     @Override
     public String sayGreeting() {
-        return "Hello World";
+        return "Hello World - Constructor";
     }
 }

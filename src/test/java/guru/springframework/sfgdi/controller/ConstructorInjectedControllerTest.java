@@ -1,10 +1,8 @@
 package guru.springframework.sfgdi.controller;
 
-import guru.springframework.sfgdi.services.GreetingServiceImpl;
+import guru.springframework.sfgdi.services.ConstructorGreetingService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class ConstructorInjectedControllerTest {
 
@@ -15,7 +13,7 @@ class ConstructorInjectedControllerTest {
     @BeforeEach
     void setUp() {
         // mimicking what the Spring framework does by instantiating the object
-        controller = new ConstructorInjectedController(new GreetingServiceImpl());
+        controller = new ConstructorInjectedController(new ConstructorGreetingService());
     }
 
     @Test
